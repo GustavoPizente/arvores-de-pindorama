@@ -1,0 +1,317 @@
+/*FONTES*/
+
+.galindo-regular {
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.island-moments-regular {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inika-regular {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inika-bold {
+  font-family: "Inika", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*APP*/
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(122, 238, 199);
+  background-image: url("./mapa.png");
+  background-size: 24%;
+  background-position: center;
+  overflow: hidden;
+}
+
+/*Header*/
+
+.todoheader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 17%;
+}
+
+.conteudoheader {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #8b4513 calc(55% - 1px),
+    transparent calc(50% + 1px)
+  );
+}
+
+.title {
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 2px;
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza completamente */
+  z-index: 1;
+  margin: 0px;
+  background-color: #984836;
+  text-align: center;
+  align-items: center;
+  line-height: 0.9;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    width: 75%;
+  }
+}
+
+.conteudoheader h1 {
+  font-family: "Island Moments";
+}
+.pindorama {
+  font-family: "Galindo";
+}
+
+/*Conteúdo Principal*/
+
+.main {
+  width: 75%;
+  height: 70%;
+  background-color: #ebf574;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .conteudoprincipal {
+    width: 75%;
+  }
+  .entradaformulario {
+    width: 90%;
+  }
+}
+
+.conteudo {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  text-align: center;
+}
+.conteudo h1 {
+  font-family: "Galindo";
+  font-size: 15px;
+}
+
+.conteudo span {
+  font-family: "Inika";
+}
+
+.botaopesquisar {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+.botaocadastrar {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/*MODALPESQUISAR*/
+
+.modalpesquisar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudomodalpesquisar {
+  width: 75%;
+  height: 70%;
+  background-color: #ebf574;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudoformulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteudomodalpesquisar {
+  width: 75%;
+  height: 70%;
+  background-color: #ebf574;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudomodalpesquisar h2 {
+  font-family: "Inika";
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 400px) {
+  .conteudomodalpesquisar h2 {
+      font-size: 18px;
+  }}
+
+  @media (max-width: 355px) {
+    .conteudomodalpesquisar h2 {
+        font-size: 14px;
+    }
+}
+
+.formulariopesquisar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .formulariopesquisar {
+    width: 75%;
+  }
+}
+
+@media (max-width: 700px) {
+  .formulariopesquisar {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulariopesquisar {
+    width: 95%;
+  }
+}
+
+@media (max-width: 380px) {
+  .formulariopesquisar {
+    width: 100%;}
+ 
+}
+
+@media (max-width: 355px) {
+  .formulariopesquisar {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.itensformulariopesquisar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.entradaformulario {
+  width: 70%;
+}
+@media (max-width: 600px) {
+  .entradaformulario {
+    width: 95%;
+  }
+}
+
+.submitpesquisar {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.svgpesquisar {
+  width: 100%;
+}
+
+/*Footer*/
+
+.logo {
+  background-color: #984836;
+  width: 10%;
+  height: 90%;
+}
+
+.footer {
+  width: 100%;
+  height: 9vh;
+  background-color: #8b4513;
+  display: flex;
+  justify-content: center;
+}
+
+.conteudofooter {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Inika", serif;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .conteudofooter {
+    width: 75%;
+  }
+
+  .conteudomodalpesquisar {
+    margin-top: 14%;
+  }
+}
+
+/*MODAL PESQUISA*/
+
+.ModalPesquisa {
+  width: 65%;
+  height: 50%;
+  border: 1px solid black;
+}
