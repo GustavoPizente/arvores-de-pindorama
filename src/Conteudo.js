@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Formulario from "./Formulario";
 import Resultado from "./Resultado";
 
+
+//CONTROLA A ABERTURA DO MODAL//
 function Conteudo() {
   const [modalIsOpen, setModalIsOpen] = useState(false); 
 
@@ -15,7 +17,7 @@ function Conteudo() {
       setModalIsOpen(false);
   };
 
- 
+ ////
 
 
   return (

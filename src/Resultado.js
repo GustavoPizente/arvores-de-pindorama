@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 
-function Resultado ({isOpen})
+
+function Resultado ({isOpen,madeira,cor, localidade})
 {
 
     if (!isOpen) {return null}
@@ -10,9 +10,9 @@ function Resultado ({isOpen})
 
         <div className="resultado">
 
-            <p>Aqui o reultado 1 </p>
-            <p>aqui o resultado 2 </p>
-            <p>Aqui o resultado 3</p>
+            <p>{madeira} </p>
+            <p>{cor}</p>
+            <p>{localidade}</p>
         </div>
 
     )
