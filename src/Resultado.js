@@ -10,9 +10,9 @@ function Resultado ({isOpen,madeira,cor, localidade})
 
         <div className="resultado">
 
-            <p>{madeira} </p>
-            <p>{cor}</p>
-            <p>{localidade}</p>
+            <p>nome</p>
+            <p>cor</p>
+            <p>localidade</p>
         </div>
 
     )

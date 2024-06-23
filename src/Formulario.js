@@ -24,8 +24,8 @@ function Formulario() {
     console.log(madeira);
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/madeirasbusca",
+      const response = await axios.get(
+        "http://localhost:5000/madeiras",
         { madeira },
         {
           headers: {
@@ -37,6 +37,7 @@ function Formulario() {
       console.log("Madeira:", nomeMadeira);
       console.log("Cor:", cor);
       console.log("Localidade:", localidade);
+      
       
       console.log(response.data);
     } catch (error) {
@@ -85,7 +86,10 @@ function Formulario() {
           <SvgPesquisar></SvgPesquisar>
         </button>
       </form>
+      <Resultado isOpen={resultadoIsOpen}></Resultado>
     </div>
+
+    
   );
 }
 
