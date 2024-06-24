@@ -1,1 +1,1 @@
-O projeto foi feito para estudo e se baseia em uma rede de contato entre marceneiros e intusiastas para registrarem as madeiras que forem utilizando assim como suas características. A proposta é que vire um Hub para troca de conhecimento sobre madeiras entre os usuários.
+ A proposta é um Hub para troca de conhecimento sobre madeiras entre os usuários. O projeto foi feito para estudo e se baseia em uma rede de contato entre marceneiros e intusiastas para registrarem as madeiras que forem utilizando assim como suas características.
