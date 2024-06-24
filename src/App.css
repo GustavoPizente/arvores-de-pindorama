@@ -168,7 +168,7 @@
 
 .botaoclosepesquisar {
 
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .conteudoformulario {
@@ -297,7 +297,7 @@
 
   display: flex;
   justify-content: center;
-  width: 15%;
+  width: 12%;
 }
 
 .footer {
@@ -315,7 +315,7 @@
   font-family: "Galindo", sans-serif;
     text-decoration: none;
     color: black;
-    width: 15%;
+    width: 7%;
 }
 
 .conteudofooter {
