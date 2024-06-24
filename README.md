@@ -1,6 +1,5 @@
- A proposta é um Hub para troca de conhecimento sobre madeiras entre os usuários. O projeto foi feito para estudo e se baseia em uma rede de contato entre marceneiros e intusiastas para registrarem as madeiras que forem utilizando assim como suas características.
-
- O site foi feito Utilizando React,Axios,Nest,TypeORM E MySQL. Além de prototipagem no Figma.
+A proposta é um Hub para troca de conhecimento sobre madeiras entre os usuários. O projeto foi feito para estudo e se baseia em uma rede de contato entre marceneiros e entusiastas para registrarem as madeiras que forem utilizando assim como suas características.
+O site foi feito Utilizando React,Axios,Nest,TypeORM E MySQL. Além de prototipagem no Figma. (O projeto está ainda em andamento)
 
 
  https://arvores-de-pindorama.vercel.app/
