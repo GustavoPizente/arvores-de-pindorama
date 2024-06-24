@@ -242,8 +242,18 @@
   .formulariopesquisar {
     width: 100%;
     font-size: 14px;
-  }
-}
+  }}
+
+
+  
+
+  @media (max-width: 330px) {
+    .input{
+
+      width: 100%;
+    }
+    }
+
 
 .itensformulariopesquisar {
   display: flex;
@@ -281,7 +291,7 @@
 }
 
 .linklogo {
-  width: 15%;
+  width: 7%;
   display: flex;
   justify-content: center;
 }

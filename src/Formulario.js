@@ -69,6 +69,7 @@ function Formulario() {
           <label className="itensformulariopesquisar">
             Nome:
             <input
+            className="input"
               name="madeira"
               type="text"
               value={nomeMadeira}
@@ -81,6 +82,7 @@ function Formulario() {
           <label className="itensformulariopesquisar">
             <p>Cor:</p>
             <input
+            className="input"
               type="text"
               value={cor}
               onChange={(e) => setCor(e.target.value)}
@@ -91,6 +93,7 @@ function Formulario() {
           <label className="itensformulariopesquisar">
             Localidade:
             <input
+            className="input"
               type="text"
               value={localidade}
               onChange={(e) => setLocalidade(e.target.value)}
