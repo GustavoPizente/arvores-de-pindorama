@@ -4,6 +4,9 @@ import SvgPesquisar from "./SvgPesquisar";
 import axios from "axios";
 
 function Formulario() {
+
+
+  const estadoinicial = "";
   // Defina os estados para os campos do formulário
   const [nomeMadeira, setNomeMadeira] = useState("");
   const [cor, setCor] = useState("");
@@ -15,6 +18,16 @@ function Formulario() {
   // Função para lidar com a submissão do formulário
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (
+      nomeMadeira === estadoinicial ||
+      cor === estadoinicial ||
+      localidade === estadoinicial
+    ) {
+      alert("Você precisa preencher todos os campos");
+
+      return;}
+
+      else {
     setResultadoIsOpen(true);
     const madeira = {
       name: nomeMadeira,
@@ -22,6 +35,8 @@ function Formulario() {
       localidade : localidade,
     };
     console.log(madeira);
+
+    
 
     try {
       const response = await axios.get(
@@ -43,7 +58,7 @@ function Formulario() {
     } catch (error) {
       console.error("Erro ao enviar requisição:", error);
     }
-
+  }
     // Aqui você pode fazer algo com os dados do formulário
   };
 
@@ -86,7 +101,7 @@ function Formulario() {
           <SvgPesquisar></SvgPesquisar>
         </button>
       </form>
-      <Resultado isOpen={resultadoIsOpen}></Resultado>
+      <Resultado isOpen={resultadoIsOpen}  nomeMadeira={nomeMadeira} cor={cor} localidade={localidade}></Resultado>
     </div>
 
     

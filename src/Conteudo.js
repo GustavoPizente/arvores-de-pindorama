@@ -52,7 +52,7 @@ function Conteudo() {
           <div className="conteudomodalpesquisar">
             <h2>Como é a madeira que procura?</h2>
             <Formulario></Formulario>
-            <button onClick={closeModal}>Close</button>
+            <button className="botaoclosepesquisar" onClick={closeModal}>Close</button>
           </div>
         </Modal>
 

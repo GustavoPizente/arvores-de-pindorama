@@ -166,6 +166,11 @@
   align-items: center;
 }
 
+.botaoclosepesquisar {
+
+  margin-top: 5%;
+}
+
 .conteudoformulario {
   width: 100%;
   display: flex;
@@ -317,14 +322,31 @@
 }
 
 
-.resultado {
+.resultados {
 
   width: 100%;
   height: 100%;
   border: 1px solid black;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 
 }
 
+.resultados h2{
+
+  font-size: 16px;
+}
+
+.resultado {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+}
 
 /*MODAL CADASTRO*/
 
