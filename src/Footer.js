@@ -6,14 +6,12 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="conteudofooter">
-      <a className="linklogo"  href="https://www.linkedin.com/in/gustavo-pizente-nazarine-69b6812b7/">
-          <div className="logo"><SvgLogo></SvgLogo></div>
-        </a>
-        <a className="linkcontato" href="https://wa.me/5514997627237?text=Fala%20a%C3%AD%2C%20Pindoramo!">
-          <div className="Contato"><SvgBtnWhatsapp></SvgBtnWhatsapp></div>
+      
+        <a className="linkcontato" href="https://www.linkedin.com/in/gustavo-pizente-nazarine-69b6812b7/">
+          <h2>Contato</h2>
         </a>
         <a className="sobrelink" href="https://github.com/GustavoPizente/arvores-de-pindorama">
-          <div className="Sobre"><SvgGitHub></SvgGitHub></div>
+          <h2>Sobre</h2>
         </a>
       </div>
     </footer>
