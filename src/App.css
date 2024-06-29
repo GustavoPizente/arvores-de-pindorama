@@ -367,16 +367,38 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  font-family: "Galindo", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 5%;
 }
 
-.resultados h2 {
-  font-size: 16px;
-}
 
 .resultado {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  font-size: 10px;
+  list-style-type:none;
+  padding: 0px;
+}
+
+.lista {
+
+  overflow: hidden;
+}
+.resultados h1 {
+
+  font-size: 18px;
+  margin: 0%;
+  margin-top: 3%;
+}
+
+
+.resultados h2 {
+
+  font-size: 12px;
+  margin: 0%;
 }
 
 /*MODAL CADASTRO*/
@@ -455,3 +477,44 @@
 .conteudomodalagradecimento h1 {
   text-align: center;
 }
+
+
+
+/*REGISTROS*/
+
+
+.lista {
+
+  cursor: grab;
+}
+
+
+
+/*Ficha*/
+.ficha {
+top: 18%;
+position: absolute;
+width: 75%;
+height: 71%;
+background-color: #9cc55a;
+border: 1px solid black;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.modal-close {
+  position: absolute;
+  right: 0%;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+}
+
+
+

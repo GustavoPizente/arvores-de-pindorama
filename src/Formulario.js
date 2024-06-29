@@ -15,6 +15,10 @@ function Formulario() {
   // Define o estado do componente Resultado
   const [resultadoIsOpen, setResultadoIsOpen] = useState(false);
 
+  // Define o Valor de Resultado//
+
+  const [valorResultado, setValorResultado] =  useState(false)
+
   // Função para lidar com a submissão do formulário
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,8 +45,12 @@ function Formulario() {
     try {
       const response = await axios.get(
         "http://localhost:5000/madeiras",
-        { madeira },
         {
+          params: {
+            name: nomeMadeira, 
+            cor: cor,  
+            localidade: localidade 
+          },
           headers: {
             "Content-Type": "application/json",
           },
@@ -55,12 +63,16 @@ function Formulario() {
       
       
       console.log(response.data);
+      setValorResultado(response.data)
+      
     } catch (error) {
       console.error("Erro ao enviar requisição:", error);
     }
   }
     // Aqui você pode fazer algo com os dados do formulário
   };
+
+  
 
   return (
     <div className="conteudoformulario">
@@ -104,7 +116,7 @@ function Formulario() {
           <SvgPesquisar></SvgPesquisar>
         </button>
       </form>
-      <Resultado isOpen={resultadoIsOpen}  nomeMadeira={nomeMadeira} cor={cor} localidade={localidade}></Resultado>
+      <Resultado isOpen={resultadoIsOpen}  nomeMadeira={nomeMadeira} cor={cor} localidade={localidade} result={valorResultado}></Resultado>
     </div>
 
     

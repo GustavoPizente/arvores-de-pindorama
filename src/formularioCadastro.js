@@ -45,11 +45,11 @@ function FormularioCadastro() {
       };
       console.log(madeira);
 
-      const baseUrl = "http://localhost:5000/madeiras"
+      const baseUrl = 'http://localhost:5000';      
 
       try {
         const response = await axios.post(
-          baseUrl,
+          'http://localhost:5000/madeiras', // Ajuste com a rota específica do seu backend
           { madeira },
           {
             headers: {
