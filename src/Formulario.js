@@ -78,7 +78,8 @@ function Formulario() {
     <div className="conteudoformulario">
       <form onSubmit={handleSubmit} className="formulariopesquisar">
         <div className="entradaformulario">
-          <label className="itensformulariopesquisar">
+          <label>
+            <div  className="itensformulariopesquisar">
             Nome:
             <input
             className="input"
@@ -88,10 +89,12 @@ function Formulario() {
               onChange={(e) => setNomeMadeira(e.target.value)}
               
             />
+            </div>
           </label>
         </div>
         <div className="entradaformulario">
-          <label className="itensformulariopesquisar">
+          <label >
+            <div className="itensformulariopesquisar">
             <p>Cor:</p>
             <input
             className="input"
@@ -99,10 +102,12 @@ function Formulario() {
               value={cor}
               onChange={(e) => setCor(e.target.value)}
             />
+            </div>
           </label>
         </div>
         <div className="entradaformulario">
-          <label className="itensformulariopesquisar">
+          <label >
+            <div className="itensformulariopesquisar">
             Localidade:
             <input
             className="input"
@@ -110,6 +115,7 @@ function Formulario() {
               value={localidade}
               onChange={(e) => setLocalidade(e.target.value)}
             />
+            </div>
           </label>
         </div>
         <button type="submit" className="submitpesquisar">
