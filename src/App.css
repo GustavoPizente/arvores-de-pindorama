@@ -231,7 +231,11 @@
     width: 95%;
   }
 }
-
+@media (max-width: 600px) {
+  .input {
+    width: 100%;
+  }
+}
 @media (max-width: 380px) {
   .formulariopesquisar {
     width: 100%;
