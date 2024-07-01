@@ -33,12 +33,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(122, 238, 199);
-  background-image: url("./mapa.png");
-  background-size: 24%;
-  background-position: center;
+  background: 
+      url('./mapa.png') no-repeat center center / 100% 60%, /* ajuste o tamanho da imagem aqui */
+      linear-gradient(to bottom, #CBFCF3 5%, #B0E2DC 25%, #96C9C6 50%, #7CAFAD 75%, #8BAEA8 95%);
+  background-blend-mode: overlay;
   overflow: hidden;
 }
+
+
+
+
+
 
 /*Header*/
 
@@ -64,6 +69,36 @@
     transparent calc(50% + 1px)
   );
 }
+
+.caixaspan {
+
+  width: 76%;
+  height: 7.5%;
+  border: solid 1px black;
+  position: absolute;
+  top: 130px;
+  left: 11.9%;
+  background-color: white;
+}
+
+.textospan {
+
+  position: relative;
+}
+
+.svgfolhadireita {
+
+  position: absolute;
+  right: -10%;
+}
+
+.svgfolhaesquerda {
+  position: absolute;
+  left: -10%;
+  transform: rotateY(180deg); /* Rotaciona horizontalmente */
+}
+
+
 
 .title {
   width: 50%;
@@ -102,7 +137,7 @@
 .main {
   width: 75%;
   height: 70%;
-  background-color: #ebf574;
+  background: linear-gradient(to bottom, #EBF574 5%, #898F44 95%);
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -136,6 +171,9 @@
   margin: 0;
   border: 0;
   cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
 }
 .botaocadastrar {
   padding: 0;
@@ -293,14 +331,13 @@
   width: 40%;
   height: 100%;
   text-decoration: none;
-  color: black;
 }
 
 .linkcontato {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: black;
+  color: white;
   
   
 }
@@ -319,17 +356,19 @@
 .sobrelink {
   
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .sobrelink h2 {
 
   margin:2px;
+  font-weight: 100;
 }
 
 .linkcontato h2 {
 
   margin:2px;
+  font-weight: 100;
 }
 
 .conteudofooter {
@@ -343,6 +382,8 @@
   justify-content: space-around;
   font-family: "Inika", serif;
   text-decoration: none;
+  font-size: 11px;
+  
 }
 
 @media (max-width: 600px) {

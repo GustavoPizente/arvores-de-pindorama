@@ -33,11 +33,11 @@ function Conteudo() {
     <main className="main">
       <div className="conteudo">
         <h1>
-          <span>
+          <div className="caixaspan"></div>
+          <span className="textospan">
             Encontre aqui registros de madeiras feitos por marceneiros de todo o
             país. <br></br>
           </span>
-          O que precisa fazer hoje?
         </h1>
 
         <button className="botaopesquisar" onClick={() => openModal()}>

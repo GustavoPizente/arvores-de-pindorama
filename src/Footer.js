@@ -13,6 +13,9 @@ function Footer() {
         <a className="sobrelink" href="https://github.com/GustavoPizente/arvores-de-pindorama">
           <h2>Sobre</h2>
         </a>
+        <a className="sobrelink" href="https://github.com/GustavoPizente/arvores-de-pindorama">
+          <h2>@copy</h2>
+        </a>
       </div>
     </footer>
   );
