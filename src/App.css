@@ -71,14 +71,13 @@
 }
 
 .caixaspan {
-
-  width: 76%;
+  background-color: #fff;
+  border: 1px solid #000;
   height: 7.5%;
-  border: solid 1px black;
-  position: absolute;
-  top: 130px;
   left: 11.9%;
-  background-color: white;
+  position: absolute;
+  top: 21.5%;
+  width: 76%;
 }
 
 .textospan {
@@ -180,6 +179,11 @@
   margin: 0;
   border: 0;
   cursor: pointer;
+  height: 0%;
+}
+
+.svgmaincadastrar {
+  width: 98%;
 }
 
 /*MODALPESQUISAR*/
