@@ -32,13 +32,12 @@ function Conteudo() {
   return (
     <main className="main">
       <div className="conteudo">
-        <h1>
-          <div className="caixaspan"></div>
-          <span className="textospan">
+        
+          <div className="caixaspan"> <span className="textospan">
             Encontre aqui registros de madeiras feitos por marceneiros de todo o
             país. <br></br>
-          </span>
-        </h1>
+          </span></div>
+         
 
         <button className="botaopesquisar" onClick={() => openModal()}>
         <SvgMainPesquisar></SvgMainPesquisar>

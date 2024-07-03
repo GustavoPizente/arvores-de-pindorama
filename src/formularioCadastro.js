@@ -76,6 +76,7 @@ function FormularioCadastro() {
           <label className="itensformulariopesquisar">
             Nome:
             <input
+              className="input"
               name="madeira"
               type="text"
               value={nomeMadeira}
@@ -87,6 +88,7 @@ function FormularioCadastro() {
           <label className="itensformulariopesquisar">
             <p>Cor:</p>
             <input
+             className="input"
               type="text"
               value={cor}
               onChange={(e) => setCor(e.target.value)}
@@ -97,6 +99,7 @@ function FormularioCadastro() {
           <label className="itensformulariopesquisar">
             Localidade:
             <input
+             className="input"
               type="text"
               value={localidade}
               onChange={(e) => setLocalidade(e.target.value)}

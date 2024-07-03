@@ -74,15 +74,20 @@
   background-color: #fff;
   border: 1px solid #000;
   height: 7.5%;
-  left: 11.9%;
-  position: absolute;
-  top: 21.5%;
-  width: 76%;
+  position: relative;
+  top: 1%;
+  width: 100%;
 }
 
 .textospan {
 
   position: relative;
+}
+
+@media (max-width: 400px) {
+  .textospan {
+    font-size: 14px ;
+  }
 }
 
 .svgfolhadireita {
@@ -171,7 +176,7 @@
   border: 0;
   cursor: pointer;
   margin-top: 5%;
-  margin-bottom: 5%;
+  height: 0%;
 
 }
 .botaocadastrar {
@@ -183,9 +188,31 @@
 }
 
 .svgmaincadastrar {
-  width: 98%;
+  width: 100%;
 }
 
+.fundotitulocadastrarmain {
+  position: relative;
+  bottom: 21vh;
+  right: 2%;
+  background-color: white;
+  height: 3.5vh;
+  width: 103%;
+  border: solid 1px black;
+  border-radius: 1%;
+  font-family: "Inika";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+
+.fundotitulocadastrarmain h3 {
+  font-weight: 500;
+}
 /*MODALPESQUISAR*/
 
 .modalpesquisar {
