@@ -34,11 +34,38 @@
   align-items: center;
   justify-content: space-between;
   background: 
-      url('./mapa.png') no-repeat center center / 100% 60%, /* ajuste o tamanho da imagem aqui */
+      url('./mapa.png') repeat-x, 
       linear-gradient(to bottom, #CBFCF3 5%, #B0E2DC 25%, #96C9C6 50%, #7CAFAD 75%, #8BAEA8 95%);
+      background-size: 200% 100%; 
   background-blend-mode: overlay;
-  overflow: hidden;
+  animation: moveBackground 57s linear 2s infinite;
+  background-position: 0% 0%; 
 }
+
+@media (min-width: 400px) {
+  .App {
+   background-size: 150% 100% ;
+  }
+}
+@media (min-width: 700px) {
+  .App {
+   background-size: 100% 100% ;
+  }
+}
+
+
+
+/*movimento no background*/
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 600% 0%;
+  }
+}
+
 
 
 
@@ -158,7 +185,6 @@
 .conteudo {
   width: 100%;
   height: 100%;
-  border: 1px solid black;
   text-align: center;
 }
 .conteudo h1 {
