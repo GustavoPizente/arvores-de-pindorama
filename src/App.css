@@ -28,32 +28,28 @@
 
 .App {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: 
-      url('./mapa.png') repeat-x, 
-      linear-gradient(to bottom, #CBFCF3 5%, #B0E2DC 25%, #96C9C6 50%, #7CAFAD 75%, #8BAEA8 95%);
-      background-size: 200% 100%; 
-  background-blend-mode: overlay;
+  background: url("./mapa.png") repeat-x,
+    linear-gradient(to bottom, #0454b8 1%, #9bc7c4 95%);
+  background-size: 200% 100%;
   animation: moveBackground 57s linear 2s infinite;
-  background-position: 0% 0%; 
+  background-position: 0% 0%;
+  overflow-x: hidden;
 }
 
 @media (min-width: 400px) {
   .App {
-   background-size: 150% 100% ;
+    background-size: 150% 100%;
   }
 }
 @media (min-width: 700px) {
   .App {
-   background-size: 100% 100% ;
+    background-size: 100% 100%;
   }
 }
-
-
 
 /*movimento no background*/
 
@@ -66,12 +62,6 @@
   }
 }
 
-
-
-
-
-
-
 /*Header*/
 
 .todoheader {
@@ -82,12 +72,13 @@
 
 .header {
   width: 100%;
-  height: 17%;
+  height: 6%;
+  z-index: 10;
 }
 
 .conteudoheader {
   width: 100%;
-  height: 100%;
+  height: 100px;
   padding: 0;
   margin: 0;
   background-image: linear-gradient(
@@ -95,6 +86,8 @@
     #8b4513 calc(55% - 1px),
     transparent calc(50% + 1px)
   );
+  display: flex;
+  justify-content: space-between;
 }
 
 .caixaspan {
@@ -107,18 +100,16 @@
 }
 
 .textospan {
-
   position: relative;
 }
 
 @media (max-width: 400px) {
   .textospan {
-    font-size: 14px ;
+    font-size: 14px;
   }
 }
 
 .svgfolhadireita {
-
   position: absolute;
   right: -10%;
 }
@@ -129,15 +120,13 @@
   transform: rotateY(180deg); /* Rotaciona horizontalmente */
 }
 
-
-
 .title {
   width: 50%;
-  height: 50%;
+  height: 10%;
   border: 1px solid black;
   border-radius: 2px;
   position: absolute;
-  top: 59%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centraliza completamente */
   z-index: 1;
@@ -148,11 +137,16 @@
   line-height: 0.9;
   padding-bottom: 20px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
   .title {
-    width: 75%;
+    width: 55%;
   }
 }
 
@@ -161,16 +155,287 @@
 }
 .pindorama {
   font-family: "Galindo";
+  font-size: 70%;
+  position: relative;
+  bottom: 10%;
+}
+
+.logo {
+  width: 46px;
+  height: 41px;
+  margin: 2%;
+}
+@media (min-width: 400px) {
+  .logo {
+    margin-top: 0.5%;
+    margin-right: 50%;
+  }
+
+  
+
+  
+
+  .swiperprincipal {
+
+    width: 85%;
+  }
+
+ 
+}
+
+
+
+@media (min-width: 1400px) {
+  .logo {
+    margin-top: 0.5%;
+    margin-right: 50%;
+  }
+
+  .conteudoheader {
+    justify-content: space-around;
+  }
+
+  
+
+  .swiperprincipal {
+
+    width: 40%;
+  }
+
+  .destaques {
+
+    
+    height: 110vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% !important;
+  }
+
+  .swiperdestaques {
+
+    width: 49% !important;
+  }
+
+
+  .bemvindofundo {
+
+    margin-top: 0%;
+  }
+
+
+}
+
+#imgbanner1 {
+
+  width: 100%;
+  height: auto;
+}
+#imgbanner2 {
+
+  width: 100%;
+  height: auto;
+}
+#imgbanner3 {
+
+  width: 100%;
+  height: auto;
+}
+
+
+@media (min-width: 1400px) {
+
+#imgbanner1 {
+
+  width: 70%;
+  height: auto;
+}
+#imgbanner2 {
+
+  width: 70%;
+  height: auto;
+}
+#imgbanner3 {
+
+  width: 70%;
+  height: auto;
+}
+
+.swiperprincipal {
+
+  width: 50% !important;
+  right: 0%  !important;
+}
+
+}
+
+@media (min-width: 530px) {
+
+  .swiperprincipal {
+
+    width: 85% !important;
+    right: 0%  !important;
+    top: 5% !important;
+    
+  }
+
+
+
+
+}
+
+.logo {
+  width: 46px;
+  height: 41px;
+}
+
+.svgmenudropdown {
+  margin: 20%;
+  position: relative;
+  right: 40%;
+}
+
+.menudropdown {
+  width: auto;
+  height: auto;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.menudropdown:hover > .opcoes {
+  display: block;
+  transition: 1s;
+}
+
+.opcoes {
+  display: none;
+  width: 170px;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  color: white;
+  background-color: #984836;
+  border: 1px solid black;
+  text-decoration: none;
+  z-index: 20;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+.opcoes > li {
+  border: 1px solid #23232b;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.opcoes > li > a {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.opcoes > li:hover {
+  background-color: #552317;
+}
+
+.textotitulo {
+  top: 70%;
+  position: relative;
 }
 
 /*Conteúdo Principal*/
 
+.bemvindofundo {
+  padding-left: 1%;
+  border-radius: 2%;
+  padding-right: 1%;
+  background-color: #a17042;
+  width: 100%;
+  margin-top: -8%;
+  margin-bottom: 5%;
+}
+
+.bemvindo {
+  background-color: #fffad4;
+
+  text-align: center;
+  font-size: 7px;
+  font-family: "Inika";
+}
+
+.principal {
+  width: 86%;
+
+  height: 60%;
+
+  top: -7%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay {
+  display: none; /* Esconde a camada por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Define a opacidade desejada */
+  z-index: 2; /* Certifica-se de que está acima do conteúdo principal */
+}
+
+.swiperprincipal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  /* top: var(--swiper-pagination-top, auto); */
+  
+  top: 88%;
+  height: 110%;
+  width: 110%;
+  right: 4.5%;
+}
+
+.abrirpesquisar {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
+  
+}
+
+.hero {
+  border: 1px solid black;
+  width: 80%;
+  height: 86.5vh;
+}
+/*Conteúdo Pesquisar*/
+
 .main {
-  width: 75%;
-  height: 70%;
-  background: linear-gradient(to bottom, #EBF574 5%, #898F44 95%);
+  background: linear-gradient(to bottom, #ebf574 5%, #898f44 95%);
   border: 1px solid black;
   border-radius: 5px;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
 }
 
 @media (max-width: 600px) {
@@ -203,7 +468,17 @@
   cursor: pointer;
   margin-top: 5%;
   height: 0%;
-
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
 }
 .botaocadastrar {
   padding: 0;
@@ -211,6 +486,17 @@
   border: 0;
   cursor: pointer;
   height: 0%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
 }
 
 .svgmaincadastrar {
@@ -230,20 +516,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
-
-
 
 .fundotitulocadastrarmain h3 {
   font-weight: 500;
 }
 /*MODALPESQUISAR*/
 
+.ReactModal__Overlay {
+  position: absolute;
+  z-index: 20;
+}
+.ReactModal__Overlay--after-open {
+  position: absolute;
+  z-index: 20;
+}
+
 .modalpesquisar {
+  position: relative;
+  top: 20%;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +543,7 @@
 
 .conteudomodalpesquisar {
   width: 75%;
-  height: 70%;
+  height: 50%;
   background-color: #ebf574;
   border: 1px solid black;
   border-radius: 5px;
@@ -267,17 +559,6 @@
 
 .conteudoformulario {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.conteudomodalpesquisar {
-  width: 75%;
-  height: 70%;
-  background-color: #ebf574;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-top: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,8 +659,26 @@
   width: 100%;
 }
 
-/*Footer*/
+.destaques {
+  background-image: url("./DestaquesFundo.png");
+  height: 65vh;
+  width: 118%;
+  background-size: 100%;
+}
+.swiperdestaques {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+}
 
+.imgdestaques {
+  margin: 5%;
+  width: 40vh;
+}
+
+/*Footer*/
 
 .Contato {
   display: flex;
@@ -395,10 +694,7 @@
   justify-content: center;
   text-decoration: none;
   color: white;
-  
-  
 }
-
 
 .footer {
   width: 100%;
@@ -411,20 +707,17 @@
 }
 
 .sobrelink {
-  
   text-decoration: none;
   color: white;
 }
 
 .sobrelink h2 {
-
-  margin:2px;
+  margin: 2px;
   font-weight: 100;
 }
 
 .linkcontato h2 {
-
-  margin:2px;
+  margin: 2px;
   font-weight: 100;
 }
 
@@ -440,7 +733,6 @@
   font-family: "Inika", serif;
   text-decoration: none;
   font-size: 11px;
-  
 }
 
 @media (max-width: 600px) {
@@ -475,30 +767,25 @@
   margin-top: 5%;
 }
 
-
 .resultado {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 10px;
-  list-style-type:none;
+  list-style-type: none;
   padding: 0px;
 }
 
 .lista {
-
   overflow: hidden;
 }
 .resultados h1 {
-
   font-size: 18px;
   margin: 0%;
   margin-top: 3%;
 }
 
-
 .resultados h2 {
-
   font-size: 12px;
   margin: 0%;
 }
@@ -506,8 +793,8 @@
 /*MODAL CADASTRO*/
 
 .modalcadastro {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,6 +839,10 @@
   }
 }
 
+.botaofecharpesquisar {
+  margin-bottom: 5%;
+}
+
 /*MODAL AGRADECIMENTO*/
 
 .modalagradecimento {
@@ -580,30 +871,24 @@
   text-align: center;
 }
 
-
-
 /*REGISTROS*/
 
-
 .lista {
-
   cursor: grab;
 }
 
-
-
 /*Ficha*/
 .ficha {
-top: 18%;
-position: absolute;
-width: 75%;
-height: 71%;
-background-color: #9cc55a;
-border: 1px solid black;
-border-radius: 5px;
-display: flex;
-flex-direction: column;
-align-items: center;
+  top: 18%;
+  position: absolute;
+  width: 75%;
+  height: 71%;
+  background-color: #9cc55a;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .modal-close {
   position: absolute;
@@ -615,8 +900,4 @@ align-items: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
-
 }
-
-
-
