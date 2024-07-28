@@ -23,6 +23,10 @@ function Destaques() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
         
         className="swiperdestaques"
       >
@@ -34,6 +38,15 @@ function Destaques() {
         <SwiperSlide><img className="imgdestaques" src={destaques6}></img></SwiperSlide>
       </Swiper>
 
+
+        <div className="caixatextodestaques">
+
+            <h2 className="artigo"><img src={destaques1}/><div className="textodoartigo"><h2>Artigo 1</h2><h3>texto to artigo</h3></div></h2>
+            <h2 className="artigo"><img src={destaques2}/><div className="textodoartigo"><h2>Artigo 1</h2><h3>texto to artigo</h3></div></h2>
+            <h2 className="artigo"><img src={destaques3}/><div className="textodoartigo"><h2>Artigo 1</h2><h3>texto to artigo</h3></div></h2>
+            <h2 className="artigo"><img src={destaques4}/><div className="textodoartigo"><h2>Artigo 1</h2><h3>texto to artigo</h3></div></h2>
+            <h2 className="artigo"><img src={destaques5}/><div className="textodoartigo"><h2>Artigo 1</h2><h3>texto to artigo</h3></div></h2>
+        </div>
     </div>
   );
 }
