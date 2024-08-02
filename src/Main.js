@@ -8,6 +8,10 @@ import banner2grande from "./banner2grande.png"
 import banner3 from "./banner3.png";
 import banner3grande from "./banner3grande.png"
 import Destaques from "./Destaques";
+import morrosolo from "./morrosolo.png"
+import fundomorro from "./fundomorro.png"
+import floresta1 from "./floresta1.png"
+import floresta2 from "./floresta2.png"
 
 // Import Swiper styles
 import "swiper/css";
@@ -83,7 +87,13 @@ function Main() {
       <Destaques></Destaques>
       
 
-      <div className="hero"></div>
+      <div className="hero">
+
+      <img id="fundomorro" src={fundomorro}/>
+      <img id="morrosolo" src={morrosolo}/>
+      <img id="floresta1" src={floresta1}/>
+      <img id="floresta2" src={floresta2}/>
+      </div>
     </div>
   );
 }
