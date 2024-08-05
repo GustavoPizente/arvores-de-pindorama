@@ -704,6 +704,13 @@ a {
   margin: 0%;
   font-size: 9px;
 }
+/*Destaques*/
+
+.imghero {
+
+  width: 300px;
+  height: 200px;
+}
 
 /*Footer*/
 

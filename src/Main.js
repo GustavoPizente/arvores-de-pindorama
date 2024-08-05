@@ -89,10 +89,10 @@ function Main() {
 
       <div className="hero">
 
-      <img id="fundomorro" src={fundomorro}/>
-      <img id="morrosolo" src={morrosolo}/>
-      <img id="floresta1" src={floresta1}/>
-      <img id="floresta2" src={floresta2}/>
+      <img className="imghero" id="fundomorro" src={fundomorro}/>
+      <img className="imghero" id="morrosolo" src={morrosolo}/>
+      <img className="imghero" id="floresta1" src={floresta1}/>
+      <img className="imghero" id="floresta2" src={floresta2}/>
       </div>
     </div>
   );
