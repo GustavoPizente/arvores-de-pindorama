@@ -12,6 +12,7 @@ import morrosolo from "./morrosolo.png"
 import fundomorro from "./fundomorro.png"
 import floresta1 from "./floresta1.png"
 import floresta2 from "./floresta2.png"
+import Jogos from "./Jogos";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,6 +23,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 function Main() {
   const [conteudoOpen, setConteudoOpen] = useState(false);
+  const [jogosOpen, setJogosOpen] = useState(false);
 
   const openConteudo = () => {
     setConteudoOpen(true);
@@ -29,8 +31,21 @@ function Main() {
     document.querySelector('.bemvindofundo').style.display = 'none';
   };
 
+
   const closePesquisar = () => {
     setConteudoOpen(false);
+    document.querySelector('.overlay').style.display = 'none';
+    document.querySelector('.bemvindofundo').style.display = 'block';
+  };
+
+  
+  const openJogos = () => {
+    setJogosOpen(true);
+    document.querySelector('.bemvindofundo').style.display = 'none';
+  };
+
+  const closeJogos = () => {
+    setJogosOpen(false);
     document.querySelector('.overlay').style.display = 'none';
     document.querySelector('.bemvindofundo').style.display = 'block';
   };
@@ -68,12 +83,12 @@ function Main() {
           </button>
         </SwiperSlide>
         <SwiperSlide>
-        <button className="abrirpesquisar"  onClick={() => openConteudo()}>
+        <button className="abrirpesquisar"  onClick={() => openJogos()}>
         {" "}
           <img id="imgbanner2" src={banner2}/>
 
           </button>
-        </SwiperSlide>
+        </SwiperSlide> 
         <SwiperSlide>
           <button className="abrirpesquisar"  onClick={() => openConteudo()}>
             {" "}
@@ -83,6 +98,7 @@ function Main() {
       </Swiper>
 
       <ConteudoPesquisa isOpen={conteudoOpen} closePesquisar={closePesquisar} />
+      <Jogos isOpen={jogosOpen} closeJogos={closeJogos} />
 
       <Destaques></Destaques>
       
