@@ -1013,9 +1013,15 @@ a {
   background-color: white;
   position: absolute;
   z-index: 500;
-  width: 100%;
-  height: auto;
+  width: 110%;
+  height: 35%;
   top: 10px;
   border: 50%;
   border: black 1px solid;
+}
+
+.jogos h1{
+  margin-left:25%;
+  font-size: 10px;
+  
 }
