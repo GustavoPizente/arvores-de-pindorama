@@ -1010,7 +1010,7 @@ a {
 }
 
 .jogos {
-  background-color: white;
+  background-color :  #f1eed2;
   position: absolute;
   z-index: 500;
   width: 110%;
@@ -1021,7 +1021,78 @@ a {
 }
 
 .jogos h1{
-  margin-left:25%;
-  font-size: 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 6%;
   
+  
+}
+
+.jogos p {
+
+  text-align: center;
+  margin-top: 5.5px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.botaofecharjogos {
+
+  position: absolute;
+  left: 94%;
+  top: -1%;
+  z-index: 50;
+
+
+}
+
+#imgjogar{
+
+  width: 84%;
+  margin: 8%;
+  margin-top: 10%;
+}
+
+
+.cartao1 {
+
+  position: absolute;
+  top: 0%;
+  background-color: darkseagreen;
+  padding: 5%;
+  height: 80%;
+
+}
+#cartao1img{
+
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.opcoesquiz {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+    flex-direction: column;
+}
+.opcoescartao {
+
+  border: 1px solid black;
+    z-index: 51;
+    width: 120px;
+    height: 40px;
+}
+
+.botaofecharcartao {
+
+  position: absolute;
+  left: 94%;
+  top: -1%;
+  z-index: 51;
+
+
 }
