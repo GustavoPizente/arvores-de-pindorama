@@ -1074,10 +1074,13 @@ a {
 .opcoesquiz {
 
   width: 100%;
-  height: auto;
+  height: 30%;
   display: flex;
   align-items: center;
-    flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 .opcoescartao {
 
