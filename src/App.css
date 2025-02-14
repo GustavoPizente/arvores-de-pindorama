@@ -1055,7 +1055,7 @@ a {
 }
 
 
-.cartao1 {
+.cartao {
 
   position: absolute;
   top: 0%;
@@ -1098,4 +1098,9 @@ a {
   z-index: 51;
 
 
+}
+
+.pergunta img {
+  width: 100%;
+  height: auto;
 }

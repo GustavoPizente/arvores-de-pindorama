@@ -1,19 +1,19 @@
 
 import React, { useState } from "react";
 import jogarclique from "./jogar.png"
-import Cartao1 from "./Cartao1";
+import Cartao from "./Cartao";
 
 const Jogos = ({ isOpen, closeJogos }) => {
 
-  const [Cartao1Open, setCartao1Open] = useState(false);
+  const [CartaoOpen, setCartaoOpen] = useState(false);
 
-  const OpenCartao1 = () => {
-    setCartao1Open(true);
+  const OpenCartao = () => {
+    setCartaoOpen(true);
     document.querySelector('.bemvindofundo').style.display = 'none';
   };
 
-  const closeCartao1 = () => {
-    setCartao1Open(false);
+  const closeCartao = () => {
+    setCartaoOpen(false);
     document.querySelector('.overlay').style.display = 'none';
     document.querySelector('.bemvindofundo').style.display = 'block';
   };
@@ -29,11 +29,11 @@ const Jogos = ({ isOpen, closeJogos }) => {
 
       <p>Clique em <b>Iniciar</b> e teste seus conhecimentos</p>
 
-      <button onClick={OpenCartao1} className="botaoabrircartao"><img  id="imgjogar" src={jogarclique}/></button>
+      <button onClick={OpenCartao} className="botaoabrircartao"><img  id="imgjogar" src={jogarclique}/></button>
 
         </div>
       <button onClick={closeJogos} className="botaofecharjogos">X</button>
-      <Cartao1 isOpen={Cartao1Open} closeCartao1={closeCartao1} ></Cartao1>
+      <Cartao isOpen={CartaoOpen} closeCartao={closeCartao} ></Cartao>
     </div>
   );
 };
