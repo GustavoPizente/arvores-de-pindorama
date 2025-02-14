@@ -1,4 +1,4 @@
-import Pergunta1 from "./morrosolo.png"
+import Pergunta1 from "./Sucupira.png"
 import Pergunta2 from "./mapa.png"
 
 export const Perguntas = [

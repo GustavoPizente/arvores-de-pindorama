@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import jogarclique from "./jogar.png";
 import { Perguntas } from "./Perguntas";
 
 const Cartao = ({ isOpen, closeCartao }) => {
@@ -17,6 +16,15 @@ const Cartao = ({ isOpen, closeCartao }) => {
       closeCartao();
     }
   }
+
+  function fecharEResetar()
+  {
+      closeCartao();
+      setPerguntaAtual(0);
+
+
+
+  }
   return (
     <div className="cartao" style={{ display: isOpen ? "block" : "none" }}>
       <div className="pergunta">
@@ -26,7 +34,6 @@ const Cartao = ({ isOpen, closeCartao }) => {
       <div className="opcoesquiz">
         {perguntas[perguntaAtual].opcoesrespostas.map((opcoesrespostas) => (
           <div className="opcoescartao">
-            <span>{opcoesrespostas.alternativa}</span>
             <button
               onClick={() => {
                 if (opcoesrespostas.correta) {
@@ -35,6 +42,7 @@ const Cartao = ({ isOpen, closeCartao }) => {
 
                   closeCartao();
                   alert("Resposta incorreta! Tente novamente.");
+                  setPerguntaAtual(0);
                 }
               }}
             >
@@ -44,7 +52,7 @@ const Cartao = ({ isOpen, closeCartao }) => {
         ))}
       </div>
 
-      <button onClick={closeCartao} className="botaofecharcartao">
+      <button onClick={fecharEResetar} className="botaofecharcartao">
         X
       </button>
     </div>
