@@ -1,20 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
+const QuizResultado = ({ isOpen, atual, fechar }) => {
+  if (!isOpen) return null; 
 
-const QuizResultado = ({ isOpen }) => {
+  return (
+    <div className="quizresultado">
+      Você acertou {atual} de 10 perguntas!
 
+      <button className="voltarresultadoquiz" onClick={fechar}>voltar</button>
+    </div>
+  );
+};
 
-    return (
-
-        <div className="quizresultado">
-
-                
-
-        </div>
-
-
-    )
-
-}
-
-export default QuizResultado
+export default QuizResultado;

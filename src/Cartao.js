@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import { Perguntas } from "./Perguntas";
+import QuizResultado from "./QuizResultado";
 
 const Cartao = ({ isOpen, closeCartao }) => {
   const perguntas = Perguntas ?? [];
   const [perguntaAtual, setPerguntaAtual] = useState(0);
+  const [quizResultadoOpen, setQuizResultadoOpen] = useState(false);
+
+  function abrirResultado () {
+    setQuizResultadoOpen(true);
+    
+
+
+  }
 
   function proximaPergunta() {
     const nextQuestion = perguntaAtual + 1;
@@ -11,9 +20,10 @@ const Cartao = ({ isOpen, closeCartao }) => {
     if (nextQuestion < perguntas.length) {
       setPerguntaAtual(nextQuestion);
     } else {
-      alert("sua pontuação final foi", {perguntaAtual},"/10");
-      setPerguntaAtual(0);
-      closeCartao();
+
+      
+      abrirResultado();
+      
     }
   }
 
@@ -21,14 +31,14 @@ const Cartao = ({ isOpen, closeCartao }) => {
   {
       closeCartao();
       setPerguntaAtual(0);
-
+      setQuizResultadoOpen(false);
 
 
   }
   return (
     <div className="cartao" style={{ display: isOpen ? "block" : "none" }}>
 
-      <div className="contagem">{perguntaAtual}/10</div>
+      <div className="contagem">{perguntaAtual +1}/10</div>
       <div className="pergunta">
         <img src={perguntas[perguntaAtual].imagempergunta} alt="Pergunta" />
       </div>
@@ -44,9 +54,8 @@ const Cartao = ({ isOpen, closeCartao }) => {
                   proximaPergunta();
                 } else {
 
-                  closeCartao();
-                  alert("Resposta incorreta! Tente novamente.");
-                  setPerguntaAtual(0);
+                  
+                  abrirResultado();
                 }
               }}
             >
@@ -59,6 +68,9 @@ const Cartao = ({ isOpen, closeCartao }) => {
       <button onClick={fecharEResetar} className="botaofecharcartao">
         X
       </button>
+
+        <QuizResultado isOpen={quizResultadoOpen} atual={perguntaAtual} fechar={fecharEResetar}></QuizResultado>
+      
     </div>
   );
 };
