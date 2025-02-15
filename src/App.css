@@ -1139,3 +1139,40 @@ a {
   justify-content: space-evenly;
   flex-direction: column;
 }
+
+.telalogin {
+
+  display: flex
+  ;
+      background-color: #9bc7c4;
+      width: 80%;
+      height: 15%;
+      border: 2px solid white;
+      border-radius: 2%;
+      position: absolute;
+      top: 5%;
+      z-index: 55;
+      justify-content: center;
+}
+
+.closelogin {
+  position: absolute;
+  background-color: white;
+  font-size: 14px;
+  right: -1%;
+  top: -2%;
+  width: 12px;
+  text-align: center;
+}
+
+.entradas {
+
+  display: flex
+  ;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-evenly;
+      width: 90%;
+      align-items: center;
+      margin-top: 20%;
+}
