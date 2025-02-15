@@ -1081,7 +1081,7 @@ a {
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .opcoesquiz button {
 
@@ -1112,4 +1112,11 @@ a {
   width: 100%;
   height: auto;
   margin-top: 22px;
+}
+
+.qualamadeira {
+
+  text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }

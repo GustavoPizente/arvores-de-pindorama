@@ -11,7 +11,7 @@ const Cartao = ({ isOpen, closeCartao }) => {
     if (nextQuestion < perguntas.length) {
       setPerguntaAtual(nextQuestion);
     } else {
-      alert("Você chegou ao fim do quiz");
+      alert("sua pontuação final foi", {perguntaAtual},"/10");
       setPerguntaAtual(0);
       closeCartao();
     }
@@ -27,9 +27,13 @@ const Cartao = ({ isOpen, closeCartao }) => {
   }
   return (
     <div className="cartao" style={{ display: isOpen ? "block" : "none" }}>
+
+      <div className="contagem">{perguntaAtual}/10</div>
       <div className="pergunta">
         <img src={perguntas[perguntaAtual].imagempergunta} alt="Pergunta" />
       </div>
+
+      <div className="qualamadeira">Qual a madeira da foto?</div>
 
       <div className="opcoesquiz">
         {perguntas[perguntaAtual].opcoesrespostas.map((opcoesrespostas) => (
