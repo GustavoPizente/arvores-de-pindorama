@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Login({ isOpen, closeLogin}) {
+ 
+
+  const [userName, setUserName] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+
+  const handleSubmit =(event) => {
+    
+    event.preventDefault();
+    alert(`Usuário: ${userName}\nSenha: ${userPassword}`);
+
+
+  };
   if (!isOpen) return null;
+
+
+
 
   return (
     <div className="telalogin">
       <div className="closelogin"><button onClick={closeLogin}>X</button></div>
 
-      <div className="entradas">
-        <input type="email" placeholder="E-mail" className="input-login" />
-        <input type="password" placeholder="Senha" className="input-login" />
+      <form onSubmit={handleSubmit} className="entradas">
+
+        <input type="email" placeholder="E-mail" className="input-login" value={userName} onChange={(e) => setUserName(e.target.value)} />
+
+
+        <input type="password" placeholder="Senha" className="input-login" value ={userPassword}  onChange={(e) => setUserPassword(e.target.value)}/>
+
+
         <button className="botao-login">Entrar</button>
-      </div>
+      </form>
     </div>
   );
 }
