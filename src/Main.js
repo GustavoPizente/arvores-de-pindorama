@@ -2,18 +2,10 @@ import React, { useState } from "react";
 import ConteudoPesquisa from "./ConteudoPesquisa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import banner1 from "./banner1.png";
-import banner1grande from "./banner1grande.png";
 import banner2 from "./banner2.png";
-import banner2grande from "./banner2grande.png";
 import banner3 from "./banner3.png";
-import banner3grande from "./banner3grande.png";
 import Destaques from "./Destaques";
-import morrosolo from "./morrosolo.png";
-import fundomorro from "./fundomorro.png";
-import floresta1 from "./floresta1.png";
-import floresta2 from "./floresta2.png";
 import Jogos from "./Jogos";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -21,6 +13,7 @@ import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import Login from "./Login";
+import Hero from "./Hero";
 
 function Main() {
   const [conteudoOpen, setConteudoOpen] = useState(false);
@@ -55,7 +48,6 @@ function Main() {
     document.querySelector(".bemvindofundo").style.display = "none";
   };
 
-  
   const closeLogin = () => {
     setLoginOpen(false);
   };
@@ -111,16 +103,11 @@ function Main() {
 
       <ConteudoPesquisa isOpen={conteudoOpen} closePesquisar={closePesquisar} />
       <Jogos isOpen={jogosOpen} closeJogos={closeJogos} />
-      <Login isOpen={loginOpen} closeLogin={closeLogin} ></Login>
+      <Login isOpen={loginOpen} closeLogin={closeLogin}></Login>
 
       <Destaques></Destaques>
 
-      <div className="hero">
-        <img className="imghero" id="fundomorro" src={fundomorro} />
-        <img className="imghero" id="morrosolo" src={morrosolo} />
-        <img className="imghero" id="floresta1" src={floresta1} />
-        <img className="imghero" id="floresta2" src={floresta2} />
-      </div>
+      <Hero></Hero>
     </div>
   );
 }

@@ -407,9 +407,12 @@ a {
 }
 
 .hero {
-  border: 1px solid black;
-  width: 80%;
-  height: 86.5vh;
+  display: flex;
+      width: 120%;
+      height: 86.5vh;
+      flex-direction: column;
+      align-items: center;
+  
 }
 /*Conteúdo Pesquisar*/
 
@@ -706,10 +709,74 @@ a {
 }
 /*Destaques*/
 
+
+/*HERO*/
 .imghero {
 
-  width: 300px;
+  width: 120%;
   height: 200px;
+}
+
+.parallax {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  overflow: hidden scroll;
+  transform: translate3d(0px, 0px, 0px);
+  top: 990px;
+  left: -30px;
+  border: 1px solid black;
+}
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  overflow: hidden scroll;
+  transform: translate3d(0px, 0px, 0px);
+  top: 990px;
+  left: -30px;
+  border: 1px solid black;
+}
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 120%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+
+#fundomorro {
+   
+  background-image: url(./fundomorro.png);
+
+}
+
+#morro {
+  background-image: url(./morrosolo.png);
+
+}
+
+#floresta1 {
+
+  background-image: url(./floresta1.png);
+
+
+}
+
+#floresta2 {
+
+  background-image: url(./floresta2.png);
+
+
 }
 
 /*Footer*/
