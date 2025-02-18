@@ -2,6 +2,7 @@ import React from "react";
 
 const QuizResultado = ({ isOpen, atual, fechar }) => {
   if (!isOpen) return null; 
+   
 
   return (
     <div className="quizresultado">

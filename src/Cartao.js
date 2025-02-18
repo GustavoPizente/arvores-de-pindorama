@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Perguntas } from "./Perguntas";
 import QuizResultado from "./QuizResultado";
+import QuizResultadoFinal from "./QuizResultadoFinal"
+
 
 const Cartao = ({ isOpen, closeCartao }) => {
   const perguntas = Perguntas ?? [];
   const [perguntaAtual, setPerguntaAtual] = useState(0);
   const [quizResultadoOpen, setQuizResultadoOpen] = useState(false);
-
-  function abrirResultado () {
-    setQuizResultadoOpen(true);
+  const [quizResultadoFinalOpen, setQuizResultadoFinalOpen] = useState(false);
     
 
 
-  }
+  
 
   function proximaPergunta() {
     const nextQuestion = perguntaAtual + 1;
@@ -21,17 +21,32 @@ const Cartao = ({ isOpen, closeCartao }) => {
       setPerguntaAtual(nextQuestion);
     } else {
 
+
       
-      abrirResultado();
+      
+      abrirResultadoFinal();
+      
       
     }
   }
+
+  function abrirResultado () {
+    setQuizResultadoOpen(true);}
+
+  
+  function abrirResultadoFinal (){
+
+    setQuizResultadoFinalOpen(true);
+  }
+
+
 
   function fecharEResetar()
   {
       closeCartao();
       setPerguntaAtual(0);
       setQuizResultadoOpen(false);
+      setQuizResultadoFinalOpen(false);
 
 
   }
@@ -70,7 +85,8 @@ const Cartao = ({ isOpen, closeCartao }) => {
       </button>
 
         <QuizResultado isOpen={quizResultadoOpen} atual={perguntaAtual} fechar={fecharEResetar}></QuizResultado>
-      
+        <QuizResultadoFinal isOpen={quizResultadoFinalOpen} atual={perguntaAtual} fechar={fecharEResetar}></QuizResultadoFinal>
+
     </div>
   );
 };

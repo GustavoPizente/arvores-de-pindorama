@@ -1140,6 +1140,26 @@ a {
   flex-direction: column;
 }
 
+.quizresultadofinal {
+
+  position: absolute;
+  z-index: 51;
+  top: 100px;
+  width: 90%;
+  background-color: #dfe4aa;
+  height: 200px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 2%;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+
+}
 .telalogin {
 
   display: flex

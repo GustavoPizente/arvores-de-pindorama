@@ -8,6 +8,7 @@ import Pergunta7 from "./Garapeira.png"
 import Pergunta8 from "./Jacarandá.png"
 import Pergunta9 from "./Coqueiro.png"
 import Pergunta10 from "./Nó de Pinho.png"
+import Pergunta11 from "./Nó de Pinho.png"
 
 export const Perguntas = [
   {
@@ -118,4 +119,7 @@ export const Perguntas = [
    
         ]
        }
+,
+
+
 ];
