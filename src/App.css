@@ -209,6 +209,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50% !important;
+    
   }
 
   .swiperdestaques {
@@ -650,7 +651,9 @@ a {
   background-image: url("./DestaquesFundo.png");
   height: 65vh;
   width: 118%;
-  background-size: 100%;}
+  background-size: 100%;
+  z-index: 5 !important;
+}
 
 .swiperdestaques {
   width: 100%;
@@ -718,18 +721,20 @@ a {
 }
 
 .parallax {
+  top: -45px;
   position: absolute;
   width: 120%;
-  height: 100%;
+  height: 202.3%;
   overflow: hidden scroll;
   transform: translate3d(0px, 0px, 0px);
-  top: 990px;
   left: -30px;
   border: 1px solid black;
+  background-size: cover;
 }
 
 .animation, .animation_layer {
 	height: 1000px;
+  background-size: cover;
 }
 
 .animation {
@@ -741,27 +746,32 @@ a {
   top: 990px;
   left: -30px;
   border: 1px solid black;
+  background-size: cover; 
 }
 .animation_layer {
 	background-position: bottom center;
-	background-size: auto 1038px;
+	background-size: cover 1038px !important;
 	background-repeat: repeat-x;
 	width: 120%;
 	position: absolute;
 }
 .animation_layer.parallax {
 	position: fixed;
+  background-size: cover !important;
 }
 
 
-#fundomorro {
+#ceuazul {
    
-  background-image: url(./fundomorro.png);
+  background-image: url(./ceuazul.jpg);
+  background-size: cover;
+
 
 }
 
 #morro {
   background-image: url(./morrosolo.png);
+  background-size: cover;
 
 }
 
