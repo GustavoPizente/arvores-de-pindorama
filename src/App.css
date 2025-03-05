@@ -227,7 +227,7 @@
   position: absolute;
     margin: 0;
     font-size: 16px;
-    left: 90px;
+    left: 23%;
     top: 5px;
     font-family: "Inika";
 
@@ -236,9 +236,9 @@
 #banner1h2 {
 
   position: absolute;
-  top: 415px;
+  top: 77%;
   font-size: 13px;
-  left: 74px;
+  left: 18%;
   font-family: "Inika";
 
 
@@ -246,39 +246,41 @@
 
 #banner2h1 {
   position: absolute;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Inika";
-    top: 100px;
-    left: 47px;
+    top: 18%;
+    left: 13%;
     color: #F2E676;
+
 }
 #banner2h2 {
 
   position: absolute;
-  top: 345px;
-  font-size: 24px;
-  font-family: "Inika";
-  left: 74px;
+    top: 64%;
+    font-size: 24px;
+    font-family: "Inika";
+    left: 20%;
+
 
 
 }
 
 #banner3h1 {
 
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Inika";
-  top: 77px;
-  left: 54px;
+  left: 13%;
   position: absolute;
+  top: 14%;
 }
 
 #banner3h2 {
 
   position: absolute;
   font-family: "Inika";
-  top: 290px;
-  font-size: 20px;
-  left: 70px;
+  top: 53.5%;
+  font-size: 19px;
+  left: 19%;
 }
 
 #imgbanner1 {
