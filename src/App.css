@@ -35,7 +35,6 @@
   background: 
     linear-gradient(to bottom, #0454b8 1%, #9bc7c4 95%);
   background-size: 200% 100%;
-  animation: moveBackground 57s linear 2s infinite;
   background-position: 0% 0%;
   overflow-x: hidden;
 }
@@ -732,38 +731,47 @@ a {
 
 .caixatextodestaques{
 
+  background-color: #dfe4aa;
+  left: 8%;
   position: relative;
   top: 20%;
-  padding: 25%;
-  padding-left: 5%;
-  padding-top: 1px;
-  padding-bottom: 14%;
-  background-color: #dfe4aa;
-  width: 50%;
-  left: 10%;
-
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
 }
 .artigo {
 
-  display: flex;
-  font-size: 12px;
-}
+  display: flex  ;
+      font-size: 12px;
+      align-items: center;
+      margin-left: 4px;
+      margin-bottom: 6px;
+      margin-right: 4px;
+      margin-top: 6px;
+  }
 
 .artigo img {
 
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
+
 }
 .textodoartigo {
 
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    height: 50px;
+
 }
 
 .textodoartigo h2 {
 
   margin: 0%;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .textodoartigo h3 {
@@ -1085,6 +1093,8 @@ a {
 
 
 @media (min-width: 530px) {
+
+  
 
   .swiperprincipal {
 
