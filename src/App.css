@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url("./mapa.png") repeat-x,
+  background: 
     linear-gradient(to bottom, #0454b8 1%, #9bc7c4 95%);
   background-size: 200% 100%;
   animation: moveBackground 57s linear 2s infinite;
@@ -205,7 +205,7 @@
   .destaques {
 
     
-    height: 110vh !important;
+    height: 57.5vh !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50% !important;
@@ -221,6 +221,64 @@
 
 
 
+}
+#banner1h1{
+
+  position: absolute;
+    margin: 0;
+    font-size: 16px;
+    left: 90px;
+    top: 5px;
+    font-family: "Inika";
+
+}
+
+#banner1h2 {
+
+  position: absolute;
+  top: 415px;
+  font-size: 13px;
+  left: 74px;
+  font-family: "Inika";
+
+
+}
+
+#banner2h1 {
+  position: absolute;
+    font-size: 22px;
+    font-family: "Inika";
+    top: 100px;
+    left: 47px;
+    color: #F2E676;
+}
+#banner2h2 {
+
+  position: absolute;
+  top: 345px;
+  font-size: 24px;
+  font-family: "Inika";
+  left: 74px;
+
+
+}
+
+#banner3h1 {
+
+  font-size: 25px;
+  font-family: "Inika";
+  top: 77px;
+  left: 54px;
+  position: absolute;
+}
+
+#banner3h2 {
+
+  position: absolute;
+  font-family: "Inika";
+  top: 290px;
+  font-size: 20px;
+  left: 70px;
 }
 
 #imgbanner1 {
@@ -350,6 +408,7 @@ a {
   width: 100%;
   margin-top: -8%;
   margin-bottom: 5%;
+  z-index: 51;
 }
 
 .bemvindo {
@@ -649,7 +708,7 @@ a {
 
 .destaques {
   background-image: url("./DestaquesFundo.png");
-  height: 65vh;
+  height: 57.5vh;
   width: 118%;
   background-size: 100%;
   z-index: 5 !important;
@@ -728,7 +787,6 @@ a {
   overflow: hidden scroll;
   transform: translate3d(0px, 0px, 0px);
   left: -30px;
-  border: 1px solid black;
   background-size: cover;
 }
 
@@ -763,8 +821,14 @@ a {
 
 #ceuazul {
    
-  background-image: url(./ceuazul.jpg);
-  background-size: cover;
+  background-image: url(./MapaComÁrvores.png);
+  background-size: cover !important;
+  width: 100% !important;
+  height: 15% !important;
+  animation: moveBackground 57s linear 1s infinite !important;
+  background-repeat: repeat-x !important; 
+  top: 50px !important;
+
 
 
 }

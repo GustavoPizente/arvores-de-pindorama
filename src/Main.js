@@ -84,19 +84,26 @@ function Main() {
         <SwiperSlide>
           <button className="abrirpesquisar" onClick={() => openLogin()}>
             {" "}
+            <h1 id="banner1h1">Participe da Comunidade</h1>
             <img id="imgbanner1" src={banner1} />
+            <h2 id="banner1h2">Compartilhe seus Conhecimentos com <br></br> Marceneiros de todo país.</h2>
           </button>
         </SwiperSlide>
         <SwiperSlide>
           <button className="abrirpesquisar" onClick={() => openJogos()}>
             {" "}
+            <h1 id="banner2h1">Sabe Reconhecer Madeiras?</h1>
             <img id="imgbanner2" src={banner2} />
+            <h2 id="banner2h2">Participe do Desafio</h2>
           </button>
         </SwiperSlide>
         <SwiperSlide>
           <button className="abrirpesquisar" onClick={() => openConteudo()}>
             {" "}
+
+            <h1 id="banner3h1" > Pesquise por Madeiras</h1>
             <img id="imgbanner3" src={banner3} />
+            <h2 id="banner3h2"> Cadastre as que conhece</h2>
           </button>
         </SwiperSlide>
       </Swiper>
