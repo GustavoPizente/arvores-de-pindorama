@@ -31,6 +31,8 @@ function Login({ isOpen, closeLogin}) {
 
 
         <button className="botao-login">Entrar</button>
+        <h2 className="textologin"> Ainda não tem uma conta? </h2>
+        <a className="logincadastrese" href="#"> Cadastre-se aqui </a>
       </form>
     </div>
   );

@@ -57,7 +57,7 @@
     background-position: 0% 0%;
   }
   100% {
-    background-position: 600% 0%;
+    background-position: 1000% 0%;
   }
 }
 
@@ -119,6 +119,28 @@
   transform: rotateY(180deg); /* Rotaciona horizontalmente */
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(245, 237, 237) !important;
+}
+
+/* Opcional: Aumentar o tamanho das setas */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  background-color: transparent;
+  font-size: 24px; }
+
+  
+element.style {
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fbfcfd !important
+}
+
 .title {
   width: 50%;
   height: 10%;
@@ -170,7 +192,8 @@
     margin-right: 50%;
   }
 
-  
+
+  }
 
   
 
@@ -180,7 +203,7 @@
   }
 
  
-}
+
 
 
 
@@ -214,6 +237,7 @@
   .swiperdestaques {
 
     width: 49% !important;
+    margin-top: 2% !important;
   }
 
 
@@ -227,7 +251,7 @@
     margin: 0;
     font-size: 16px;
     left: 23%;
-    top: 5px;
+    top: 72px;
     font-family: "Inika";
 
 }
@@ -298,6 +322,18 @@
   height: auto;
 }
 
+
+
+.mapafundo {
+  position: absolute;
+  top: 100px;
+  background-image: url('/src/MapaComÁrvores.png');
+  background-size: auto 80%; /* Mantém a altura e ajusta a largura automaticamente */
+  background-repeat: repeat-x; /* Faz o fundo repetir horizontalmente */
+  width: 100%;
+  height: 100%;
+  animation: moveBackground 360s linear infinite; /* Ajuste no tempo */
+}
 
 @media (min-width: 1400px) {
 
@@ -713,6 +749,7 @@ a {
   width: 118%;
   background-size: 100%;
   z-index: 5 !important;
+  padding-top: 6%;
 }
 
 .swiperdestaques {
@@ -734,12 +771,13 @@ a {
   background-color: #dfe4aa;
   left: 8%;
   position: relative;
-  top: 20%;
+  top: 18.5%;
   width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 4px;
+  padding: 3px;
+
 }
 .artigo {
 
@@ -790,15 +828,86 @@ a {
 }
 
 .parallax {
-  top: -45px;
-  position: absolute;
-  width: 120%;
-  height: 202.3%;
-  overflow: hidden scroll;
-  transform: translate3d(0px, 0px, 0px);
-  left: -30px;
-  background-size: cover;
+  width: 100%;
+  height: auto;
 }
+
+
+.ceuazul{
+
+  width: 130%;
+  height: 600px;
+  position: relative;
+  left: -20%;
+  top: 0;
+}
+
+.morrosolo {
+  width: 120%;
+  height: 20%;
+  position: absolute;
+  left: -10%;
+  top: 74%;
+}
+
+.floresta1 {
+  width: 160%;
+  height: auto;
+  position: absolute;
+  left: -15%;
+  top: 89%;
+}
+
+.floresta2 {
+  width: 120%;
+  height: auto;
+  position: relative;
+  top: 14px;
+  left: -10%;
+}
+
+.heroh1 {
+
+
+  position: absolute;
+  top: 62%;
+  width: 100%;
+  height: auto;
+  z-index: 50;
+}
+
+.heroh2 {
+
+
+  position: absolute;
+  top: 66%;
+  width: 100%;
+  height: auto;
+  z-index: 50;
+}
+
+.banqueta {
+
+
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: auto;
+  z-index: 50;
+}
+.cadastrese {
+  position: absolute;
+  top: 90%;
+  width: 60%;
+  height: auto;
+  z-index: 50;
+  left: 20%;
+
+}
+
+
+
+
 
 .animation, .animation_layer {
 	height: 1000px;
@@ -843,9 +952,24 @@ a {
 
 }
 
+#folhas {
+  background-image: url(./folhas.png);
+  background-size: cover; 
+  height: 20% !important;
+
+}
 #morro {
   background-image: url(./morrosolo.png);
   background-size: cover;
+  height: 20% !important;
+
+}
+
+#madeiras {background-image: url(./destaques5.png);
+  background-size: cover;
+  height: 20% !important;
+
+
 
 }
 
@@ -882,7 +1006,7 @@ a {
 }
 
 .footer {
-  margin-top: 1000px;
+  margin-top: 0px;
   width: 100%;
   height: 9vh;
   background-color: #8b4513;
@@ -1158,6 +1282,7 @@ a {
 
 
     left: -9% !important;
+    color: white !important;
 
 }
 
@@ -1349,4 +1474,21 @@ a {
       width: 90%;
       align-items: center;
       margin-top: 20%;
+}
+
+.input-login {
+
+  margin: 4%;
+}
+
+.textologin {
+  font-size: 12px;
+  color: #F9F2B7;
+}
+
+.logincadastrese{
+  font-size: 22px;
+  font-family: "Inika";
+  color: white;
+
 }

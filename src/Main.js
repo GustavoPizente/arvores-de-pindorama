@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination , Navigation } from "swiper/modules";
 import Login from "./Login";
 import Hero from "./Hero";
 
@@ -54,6 +54,7 @@ function Main() {
 
   return (
     <div className="principal">
+      
       <div className="overlay"></div>
       <div className="bemvindofundo">
         <div className="bemvindo">
@@ -66,47 +67,45 @@ function Main() {
       </div>
 
       <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="swiperprincipal"
-      >
-        <SwiperSlide>
-          <button className="abrirpesquisar" onClick={() => openLogin()}>
-            {" "}
-            <h1 id="banner1h1">Participe da Comunidade</h1>
-            <img id="imgbanner1" src={banner1} />
-            <h2 id="banner1h2">Compartilhe seus Conhecimentos com <br></br> Marceneiros de todo país.</h2>
-          </button>
-        </SwiperSlide>
-        <SwiperSlide>
-          <button className="abrirpesquisar" onClick={() => openJogos()}>
-            {" "}
-            <h1 id="banner2h1">Sabe Reconhecer Madeiras?</h1>
-            <img id="imgbanner2" src={banner2} />
-            <h2 id="banner2h2">Participe do Desafio</h2>
-          </button>
-        </SwiperSlide>
-        <SwiperSlide>
-          <button className="abrirpesquisar" onClick={() => openConteudo()}>
-            {" "}
-
-            <h1 id="banner3h1" > Pesquise por Madeiras</h1>
-            <img id="imgbanner3" src={banner3} />
-            <h2 id="banner3h2"> Cadastre as que conhece</h2>
-          </button>
-        </SwiperSlide>
-      </Swiper>
+  effect={"coverflow"}
+  grabCursor={true}
+  centeredSlides={true}
+  slidesPerView={"auto"}
+  coverflowEffect={{
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  }}
+  
+  pagination={{ clickable: true }}
+  navigation={true} // Habilita as setas de navegação
+  modules={[EffectCoverflow, Pagination, Navigation]} // Inclui o módulo Navigation
+  className="swiperprincipal"
+>
+  <SwiperSlide>
+    <button className="abrirpesquisar" onClick={() => openLogin()}>
+      <h1 id="banner1h1">Participe da Comunidade</h1>
+      <img id="imgbanner1" src={banner1} />
+      <h2 id="banner1h2">Compartilhe seus Conhecimentos com <br /> Marceneiros de todo país.</h2>
+    </button>
+  </SwiperSlide>
+  <SwiperSlide>
+    <button className="abrirpesquisar" onClick={() => openJogos()}>
+      <h1 id="banner2h1">Sabe Reconhecer Madeiras?</h1>
+      <img id="imgbanner2" src={banner2} />
+      <h2 id="banner2h2">Participe do Desafio</h2>
+    </button>
+  </SwiperSlide>
+  <SwiperSlide>
+    <button className="abrirpesquisar" onClick={() => openConteudo()}>
+      <h1 id="banner3h1">Pesquise por Madeiras</h1>
+      <img id="imgbanner3" src={banner3} />
+      <h2 id="banner3h2">Cadastre as que conhece</h2>
+    </button>
+  </SwiperSlide>
+</Swiper>;
 
       <ConteudoPesquisa isOpen={conteudoOpen} closePesquisar={closePesquisar} />
       <Jogos isOpen={jogosOpen} closeJogos={closeJogos} />

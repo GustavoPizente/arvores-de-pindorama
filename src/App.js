@@ -16,6 +16,7 @@ function App() {
  
   return (  
     <div className="App">
+      <div className="mapafundo"></div>
       <Header/>
       <Main/>
       <Footer />
